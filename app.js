@@ -19,7 +19,7 @@ app.use(
 );
 
 // ========== Import / require posts from data.js ========== //
-// Todo
+let posts = require("./data");
 
 // ========== REST API Implementation ========== //
 
@@ -28,18 +28,24 @@ app.get("/", (req, res) => {
 });
 
 // ========== READ: read all posts from posts ========== //
+app.get("/posts", (req, res) => {
+    return res.json(posts);
+});
+
+// ========== READ: get post by id ========== //
+app.get("/posts/:id", (req, res) => {
+    const id = req.params.id;
+    const post = posts.find(item => item.id == id);
+    return res.json(post);
+});
+
+// ========== CREATE: create new post and add to posts ========== //
 // Todo
 
-// ========== READ: get user by id ========== //
+// ========== UPDATE: update existing post ========== //
 // Todo
 
-// ========== CREATE: create new user and add to posts ========== //
-// Todo
-
-// ========== UPDATE: update existing user ========== //
-// Todo
-
-// ========== DELETE: delete user ========== //
+// ========== DELETE: delete post ========== //
 // Todo
 
 app.listen(port, () => {
