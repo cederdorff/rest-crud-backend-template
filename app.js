@@ -32,7 +32,7 @@ app.get("/posts", (req, res) => {
     return res.json(posts);
 });
 
-// ========== READ: get post by id ========== //
+// ========== READ: get one post by id ========== //
 app.get("/posts/:id", (req, res) => {
     const id = req.params.id;
     const post = posts.find(item => item.id == id);
