@@ -27,13 +27,13 @@ app.get("/", (req, res) => {
     res.send("Hello World!");
 });
 
-// ========== READ: read all users from users ========== //
+// ========== READ: read all posts from posts ========== //
 // Todo
 
 // ========== READ: get user by id ========== //
 // Todo
 
-// ========== CREATE: create new user and add to users ========== //
+// ========== CREATE: create new user and add to posts ========== //
 // Todo
 
 // ========== UPDATE: update existing user ========== //
