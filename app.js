@@ -30,16 +30,16 @@ app.get("/", (req, res) => {
 // ========== READ: read all posts from posts ========== //
 // Todo
 
-// ========== READ: get user by id ========== //
+// ========== READ: get post by id ========== //
 // Todo
 
-// ========== CREATE: create new user and add to posts ========== //
+// ========== CREATE: create new post and add to posts ========== //
 // Todo
 
-// ========== UPDATE: update existing user ========== //
+// ========== UPDATE: update existing post ========== //
 // Todo
 
-// ========== DELETE: delete user ========== //
+// ========== DELETE: delete post ========== //
 // Todo
 
 app.listen(port, () => {
